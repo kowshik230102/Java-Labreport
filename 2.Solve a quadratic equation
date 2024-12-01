@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+       Scanner input = new Scanner(System.in);
+        System.out.print("Enter the coefficient of a,b and c : ");
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+        
+        double result = b * b - 4 * a * c;
+
+        System.out.println("\nThe equation is: " + a + "x^2 + " + b + "x + " + c + " = 0");
+
+        if (result > 0) 
+        {
+            double root1 = (-b + Math.sqrt(result)) / (2 * a);
+            double root2 = (-b - Math.sqrt(result)) / (2 * a);
+            System.out.println("The roots are real which are :");
+            System.out.println("Root 1: " + root1+"Root 2: " + root2);
+        }
+        else {
+            double realPart = -b / (2 * a);
+            double imaginary = Math.sqrt(-result) / (2 * a);
+            System.out.println("The roots are complex:");
+            System.out.println("Root 1: " + realPart + " + " + imaginary + "i");
+            System.out.println("Root 2: " + realPart + " - " + imaginary + "i");
+        }
+  }
+}
