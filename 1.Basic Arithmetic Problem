@@ -1,0 +1,22 @@
+// Problem 01
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter two number ");
+        int a,b;
+        a=input.nextInt();
+        b=input.nextInt();
+        int result;
+        result=a+b;
+        System.out.println("Sum : "+ result);
+        result=a-b;
+        System.out.println("Sub : "+ result);
+        result=a*b;
+        System.out.println("Multi : "+ result);
+        result=a/b;
+        System.out.println("Div : "+ result);
+        result=a%b;
+        System.out.println("Remainder : "+ result);
+    }
+}
