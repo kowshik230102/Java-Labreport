@@ -1,0 +1,15 @@
+// Problem 03
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter your age and weight : ");
+        int age,w;
+        age=input.nextInt();
+        w=input.nextInt();
+        if(age>=18 && w>=50)
+        System.out.println("You can donate blood ");
+        else 
+        System.out.println("You can not donate blood ");
+    }
+}
