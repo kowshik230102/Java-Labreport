@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+      Scanner input=new Scanner(System.in);
+      System.out.print("Enter the number : ");
+      int n;
+      n=input.nextInt();
+    int result = sum(n);
+    System.out.println(result);
+  }
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+}
